@@ -1,5 +1,5 @@
 # reaction_timer
-
+A game that ranks you based on the number of seconds it takes you respond to the click instruction
 ## Project setup
 ```
 npm install
