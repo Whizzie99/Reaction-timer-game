@@ -1,5 +1,5 @@
 <template>
-    <div class="block" v-if="showBlock" @click="stopTimer">
+    <div class="block animate__animated animate__bounceIn" v-if="showBlock" @click="stopTimer">
         Click Me
     </div>
 </template>
@@ -36,13 +36,35 @@ export default {
 </script>
 
 <style>
+:root{
+    --gradient: linear-gradient(to right, #ff416c, #ff4b2b);
+    --webkit-gradient: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+
 .block{
     width: 400px;
     border-radius: 20px;
-    background: #0faf87;
     color: #fff;
     text-align: center;
     padding: 100px 0;
     margin: 40px auto;
+    font-family: cursive;
+    background-size: 300% 100%;
+    background-image: var(--webkit-gradient);
+    background-image: var(--gradient);
+
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.block:hover{
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 </style>
