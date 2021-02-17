@@ -1,23 +1,23 @@
 <template>
-  <div>
+  <div class="ov-body">
     <h1 class="main-header animate__animated animate__shakeX">How fast are you?⚡</h1>
 
-  <div class="tips animate__animated animate__backInLeft">
-    <h4>Rating</h4>
-    <p>Your rating is based on how fast you respond to the <b>click me</b> block 😉</p>
-    <ul>
-      <li>Very Fast⚡⚡ - oshey Flash! 🥵</li>
-      <li>Fast⚡ - Ya doing well 😉</li>
-      <li>Slow🐌 - Lori Iro! You too slow abeg 🙄</li>
-    </ul>
-  </div>
+    <div class="tips animate__animated animate__backInLeft">
+      <h4>Rating</h4>
+      <p>Your rating is based on how fast you respond to the <b>click me</b> block 😉</p>
+      <ul>
+        <li>Very Fast⚡⚡ - oshey Flash! 🥵</li>
+        <li>Fast⚡ - Ya doing well 😉</li>
+        <li>Slow🐌 - Lori Iro! You too slow abeg 🙄</li>
+      </ul>
+    </div>
 
-  <p class="fun-msg animate__animated animate__backInLeft">Have fun playing!!🤪</p>
+    <p class="fun-msg animate__animated animate__backInLeft">Have fun playing!!🤪</p>
 
-  <button class="animate__animated animate__bounceInUp" @click="start" :disabled="isPlaying">{{ btnText }}</button>
-  <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
-  <Results v-if="showResults" :score="score"/>
-  <Footer/>
+    <button class="animate__animated animate__bounceInUp" @click="start" :disabled="isPlaying">{{ btnText }}</button>
+    <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
+    <Results v-if="showResults" :score="score"/>
+    <Footer/>
   </div>
 </template>
 
@@ -78,12 +78,16 @@ export default {
   height: 100vh;
 }
 
+/* .ov-body{
+  padding: 30px;
+} */
+
 .main-header{
   font-family: 'Reggae One', cursive;
 }
 
 .tips{
-  font-family: cursive;
+  font-family: 'Architects Daughter', cursive;
 }
 
 .tips h4{
@@ -143,7 +147,15 @@ button[disabled]{
 
 .fun-msg{
   font-weight: bold;
+  font-family: 'Architects Daughter', cursive;
   font-size: 1.1em;
   margin: 20px 0;
+}
+
+/* Media Query */
+@media(max-width: 600px){
+  .ov-body{
+    width: 80%;
+  }
 }
 </style>

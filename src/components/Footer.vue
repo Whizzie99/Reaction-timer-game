@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p class="animate__animated animate__bounceInUp">Built for fun &copy; {{ date }}. <a :href="mylink" target="_blank">Wisdom Obioma</a></p>
+        <p class="animate__animated animate__bounceInUp"> For fun &copy; {{ date }}. <a :href="mylink" target="_blank">Wisdom Obioma</a></p>
     </footer>
 </template>
 
@@ -18,13 +18,10 @@ export default {
 
 <style>
     footer{
-        position: absolute;
-        bottom: 0;
-        left: 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        font-family: cursive;
+        font-family: 'Architects Daughter', cursive;
     }
 
     footer p{

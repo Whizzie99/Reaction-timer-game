@@ -43,13 +43,13 @@ export default {
 
 
 .block{
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
     color: #fff;
     text-align: center;
     padding: 100px 0;
     margin: 40px auto;
-    font-family: cursive;
+    font-family:'Architects Daughter', cursive;
     background-size: 300% 100%;
     background-image: var(--webkit-gradient);
     background-image: var(--gradient);
@@ -66,5 +66,12 @@ export default {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+}
+
+
+@media(max-width: 600px){
+  .block{
+    width: 100%;
+  }
 }
 </style>

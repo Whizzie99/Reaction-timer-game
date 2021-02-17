@@ -12,9 +12,9 @@ export default {
         }
     },
     mounted(){
-        if(this.score < 250){
+        if(this.score < 500){
             this.rank = "Toh Sharp! 🥵"
-        }else if(this.score < 400){
+        }else if(this.score < 700){
             this.rank = "Ya doing well! 😉"
         } else{
             this.rank = "Lori Iro! You too slow abeg 🙄" 
@@ -25,7 +25,7 @@ export default {
 
 <style>
     p{
-        font-family: cursive;
+        font-family: 'Architects Daughter', cursive;
     }
 
     .rank{
