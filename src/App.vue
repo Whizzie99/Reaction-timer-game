@@ -114,7 +114,7 @@ button{
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 16px;
-  font-family: cursive;
+  font-family: 'Architects Daughter', cursive;
   letter-spacing: 1px;
   cursor: pointer;
   margin: 10px;
